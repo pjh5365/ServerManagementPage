@@ -15,7 +15,7 @@
         }
         else {  //로그인이 되어있을때
             echo '<a style="float: right; padding-left: 15px" href="logout.php">로그아웃</a>';
-            echo '<a style="float: right; padding-left: 15px" href=".php">글 목록</a>';
+            echo '<a style="float: right; padding-left: 15px" href="boardList.php">글 목록</a>';
         }
         ?>
     </header>
@@ -26,9 +26,9 @@
 $conn = mysqli_connect("localhost", "pibber", "wjsansrk", "test");
 
 if($conn) {
-    $isCreated = mysqli_query($conn, "show tables from homepage");
+    $isCreated = mysqli_query($conn, "DESC member;");
     if(!$isCreated) {   //테이블이 없을때만 실행
-        $table = mysqli_query($conn, "CREATE TABLE member (
+        $table = mysqli_query($conn, "CREATE TABLE member1 (
                                         userID varchar(20) NOT NULL,
                                         userName varchar(20) NOT NULL,
                                         userPW varchar(30) NOT NULL,
