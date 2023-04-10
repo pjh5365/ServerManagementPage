@@ -11,13 +11,13 @@
             <tr>
                 <td>아이디</td>
                 <td>
-                    <input type="text" name="userID"> <br><br>
+                    <input type="text" name="userID" required> <br><br>
                 </td>
             </tr>
             <tr>
                 <td>비밀번호</td>
                 <td>
-                    <input type="password" name="userPW"> <br><br>
+                    <input type="password" name="userPW" required> <br><br>
                 </td>
             </tr>
             <tr>

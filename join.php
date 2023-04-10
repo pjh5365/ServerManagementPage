@@ -11,19 +11,19 @@
             <tr>
                 <td>이름</td>
                 <td>
-                    <input type="text" name="userName">
+                    <input type="text" name="userName" required>
                 </td>
             </tr>
             <tr>
                 <td>아이디</td>
                 <td>
-                    <input type="text" name="userID">
+                    <input type="text" name="userID" required>
                 </td>
             </tr>
             <tr>
                 <td>비밀번호</td>
                 <td>
-                    <input type="password" name="userPW">
+                    <input type="password" name="userPW" required>
                 </td>
             </tr>
             <tr>
