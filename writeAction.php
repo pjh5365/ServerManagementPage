@@ -4,6 +4,7 @@ $title = $_POST['title'];
 $content = $_POST['content'];
 
 $conn = mysqli_connect("localhost", "pibber", "wjsansrk", "test");
+mysqli_set_charset($conn, 'utf8');  //인코딩 utf8로 설정
 $sql = "INSERT INTO boardlist(userID, title, content) ";
 $sql .= "VALUES('{$_SESSION['userID']}', '$title', '$content')";
 $result = mysqli_query($conn, $sql);

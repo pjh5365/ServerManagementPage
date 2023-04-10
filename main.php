@@ -24,6 +24,7 @@
 
 <?php   //메인페이지 접속과 함께 서버의 데이터베이스에 테이블생성요청
 $conn = mysqli_connect("localhost", "pibber", "wjsansrk", "test");
+mysqli_set_charset($conn, 'utf8');  //인코딩 utf8로 설정
 
 if($conn) {
     $isCreated = mysqli_query($conn, "DESC member;");

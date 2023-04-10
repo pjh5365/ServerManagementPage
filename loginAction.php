@@ -3,7 +3,7 @@ $userID = $_POST['userID'];
 $userPW = $_POST['userPW'];
 
 $conn = mysqli_connect("localhost", "pibber", "wjsansrk", "test");
-
+mysqli_set_charset($conn, 'utf8');  //인코딩 utf8로 설정
 $sql = "SELECT * FROM member where userID = '$userID' && userPW = '$userPW';";
 $result = mysqli_query($conn, $sql);
 $list = mysqli_num_rows($result);

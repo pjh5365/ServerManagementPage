@@ -1,5 +1,6 @@
 <?php
 $conn = mysqli_connect("localhost", "pibber", "wjsansrk", "test");
+mysqli_set_charset($conn, 'utf8');  //인코딩 utf8로 설정
 
 if($conn) {
     $isCreated = mysqli_query($conn, "DESC boardlist;");    //boardlist를 찾을 수 없을때만 실행

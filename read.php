@@ -2,6 +2,7 @@
 $listNum = $_GET['data'];  //리스트에서 get방식으로 글의 번호 전달
 
 $conn = mysqli_connect("localhost", "pibber", "wjsansrk", "test");
+mysqli_set_charset($conn, 'utf8');  //인코딩 utf8로 설정
 $sql = "SELECT * FROM boardlist WHERE listNum = $listNum;";
 $result = mysqli_query($conn, $sql);
 $arr = mysqli_fetch_array($result);
