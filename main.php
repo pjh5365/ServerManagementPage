@@ -28,7 +28,7 @@ $conn = mysqli_connect("localhost", "pibber", "wjsansrk", "test");
 if($conn) {
     $isCreated = mysqli_query($conn, "DESC member;");
     if(!$isCreated) {   //테이블이 없을때만 실행
-        $table = mysqli_query($conn, "CREATE TABLE member1 (
+        $table = mysqli_query($conn, "CREATE TABLE member (
                                         userID varchar(20) NOT NULL,
                                         userName varchar(20) NOT NULL,
                                         userPW varchar(30) NOT NULL,
