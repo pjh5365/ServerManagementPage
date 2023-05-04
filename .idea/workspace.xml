@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="79257328-10d9-41af-a7b0-5a7dd6800e79" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boardList.php" beforeDir="false" afterPath="$PROJECT_DIR$/boardList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/joinAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/joinAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loginAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/loginAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/read.php" beforeDir="false" afterPath="$PROJECT_DIR$/read.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writeAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/writeAction.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +69,11 @@
       <workItem from="1681026038606" duration="10666000" />
       <workItem from="1681099329430" duration="215000" />
       <workItem from="1681099603315" duration="45000" />
-      <workItem from="1681122911576" duration="81000" />
+      <workItem from="1681122911576" duration="811000" />
+      <workItem from="1681435315953" duration="640000" />
+      <workItem from="1682053734304" duration="610000" />
+      <workItem from="1683162552984" duration="546000" />
+      <workItem from="1683178259969" duration="3952000" />
     </task>
     <servers />
   </component>

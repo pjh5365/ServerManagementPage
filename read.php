@@ -1,4 +1,6 @@
 <?php
+session_start();    //세션을 사용해 글 수정기능 구현
+
 $listNum = $_GET['data'];  //리스트에서 get방식으로 글의 번호 전달
 
 $conn = mysqli_connect("localhost", "pibber", "wjsansrk", "test");
@@ -16,10 +18,15 @@ $arr = mysqli_fetch_array($result);
 <body>
     <br><br>
     <h1 style="text-align: center"><?=$arr['title']?></h1>
-    <a style="float: right" href="boardList.php">글 목록으로 돌아가기</a>
+    <button style="float: right" type="button" onClick="location.href='boardList.php'">글 목록으로 돌아가기</button>
+    <?
+    if($arr['userID'] == $_SESSION['userID'])   //세션의 유저명과 작성자가 같다면
+        echo "<button style='float: right' type='button' onClick='location.href=\"update.php?data={$listNum}\"'>수정하기</button>";
+    ?>
     <hr>
     <h4>작성자 : <?=$arr['userID']?></h4>
     <h4>작성시간 : <?=$arr['time']?></h4>
+    <h4>최종수정시간 : <?=$arr['updateTime']?></h4>
     <hr>
     <h2>내용</h2>
     <hr>

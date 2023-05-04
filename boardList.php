@@ -11,6 +11,7 @@ if($conn) {
                                         title varchar(50) NOT NULL,
                                         content varchar(500) NOT NULL,
                                         time TIMESTAMP DEFAULT NOW(),
+                                        updateTime TIMESTAMP DEFAULT NOW() ON UPDATE NOW(),
                                         primary key(listNum))");
     }
 }
