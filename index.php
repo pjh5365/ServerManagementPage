@@ -10,8 +10,8 @@
         <?php
         session_start();
         if(!isset($_SESSION['userID'])) {   //로그인이 필요할때
-            echo '<a style="float: right; padding-left: 15px" href="join.php">회원가입</a>';
-            echo '<a style="float: right; padding-left: 15px" href="login.php">로그인</a>';
+            echo '<a style="float: right; padding-left: 15px" href="join.html">회원가입</a>';
+            echo '<a style="float: right; padding-left: 15px" href="login.html">로그인</a>';
         }
         else {  //로그인이 되어있을때
             echo '<a style="float: right; padding-left: 15px" href="logout.php">로그아웃</a>';

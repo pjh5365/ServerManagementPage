@@ -16,13 +16,13 @@ if($list) { //쿼리로 받아온 리스트에 요청한 사용자 정보가 있
     $_SESSION['userPW'] = $userPW;
     echo "<script>
         alert('로그인에 성공하였습니다.');
-        location.replace('main.php');
+        location.replace('index.php');
         </script>";
 }
 else {
     echo "<script>
         alert('로그인 실패');
-        location.replace('login.php');
+        location.replace('login.html');
         </script>";
 }
 ?>

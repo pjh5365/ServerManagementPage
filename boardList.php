@@ -53,6 +53,6 @@ else{
         }
         ?>
     </table>
-    <button type="button" onClick="location.href='write.php'" style="float: right">글 쓰기
-    <button type="button" onClick="location.href='main.php'" style="float: right">메인 화면으로 이동
+    <button type="button" onClick="location.href='write.html'" style="float: right">글 쓰기
+    <button type="button" onClick="location.href='index.php'" style="float: right">메인 화면으로 이동
 </body>
