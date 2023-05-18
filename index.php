@@ -2,23 +2,44 @@
 <head>
     <meta charset="UTF-8">
     <title>서버관리 홈페이지</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
+<?php
+            session_start();
+?>
 <body>
-    <header>
-        <br><br>
-        <h1 style="text-align: center">서버관리 홈페이지</h1>
-        <?php
-        session_start();
-        if(!isset($_SESSION['userID'])) {   //로그인이 필요할때
-            echo '<a style="float: right; padding-left: 15px" href="join.html">회원가입</a>';
-            echo '<a style="float: right; padding-left: 15px" href="login.html">로그인</a>';
-        }
-        else {  //로그인이 되어있을때
-            echo '<a style="float: right; padding-left: 15px" href="logout.php">로그아웃</a>';
-            echo '<a style="float: right; padding-left: 15px" href="boardList.php">글 목록</a>';
-        }
-        ?>
-    </header>
+    <div class="wrap">
+        <div class="header">
+            <h1>서버관리 홈페이지</h1>
+            <ul class="menu">
+                <?php
+                if(!isset($_SESSION['userID'])) {   //로그인이 필요할때
+                ?>
+                <li class="menu_item">
+                    <a href="join.html" class="menuLink">회원가입</a>
+                </li>
+                <li class="menu_item">
+                    <a href="login.html" class="menuLink">로그인</a>
+                </li>
+                <?php
+                }
+                else {  //로그인이 되어있을때
+                ?>
+                <li class="menu_item">
+                    <a href="logout.php" class="menuLink">로그아웃</a>
+                </li>
+                <li class="menu_item">
+                    <a href="boardList.php" class="menuLink">글 목록</a>
+                </li>
+                <?}?>
+            </ul>
+        </div>
+        <div class="content"></div>
+        <div class="footer">
+            Email: pjh5365@naver.com &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://github.com/pjh5365/ServerManagementPage" target="_blank">Github</a>
+        </div>
+    </div>
 </body>
 </html>
 
