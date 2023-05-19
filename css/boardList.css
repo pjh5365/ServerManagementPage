@@ -14,8 +14,8 @@ a {
 }
 /*헤더*/
 .header {
-    z-index: 1;
     position: relative;
+    z-index: 1;
     background-color: #A0D8B3;
     height: 100px;
     top: 0;
@@ -81,6 +81,26 @@ a {
 .content {
     margin: 50px auto;
 }
+table {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 10px solid #4C4C6D;
+    border-collapse : collapse;
+}
+th, tr {
+    border: 3px solid #4C4C6D;
+    font-size: 17px;
+}
+th:first-child {
+    width: 50px;
+}
+th:nth-child(2) {
+    width: 1000px;
+}
+th:nth-child(3), th:last-child {
+    width: 200px;
+}
+
 .footer {
     position: relative;
     z-index: 1;

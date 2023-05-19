@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <?php
-            session_start();
+session_start();
 ?>
 <body>
     <div class="wrap">
@@ -34,7 +34,9 @@
                 <?}?>
             </ul>
         </div>
-        <div class="content"></div>
+        <div class="container">
+            <div class="content"></div>
+        </div>
         <div class="footer">
             Email: pjh5365@naver.com &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <a href="https://github.com/pjh5365/ServerManagementPage" target="_blank">Github</a>

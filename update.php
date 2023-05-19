@@ -13,28 +13,25 @@ $arr = mysqli_fetch_array($result);
 <head>
     <meta charset="UTF-8">
     <title>글 수정하기</title>
+    <link rel="stylesheet" href="css/update.css">
 </head>
 <body>
-    <h1 style="text-align: center">글 수정하기</h1>
-    <form name="write" method="post" action="updateAction.php?listNum=<?=$listNum?>">
-        <table align="center" border="10" width="1200">
-            <tr>
-                <td height="20" style="text-align: center">제목</td>
-                <td>
+    <div class="wrap">
+        <div class="header">
+            <h1>글 수정하기</h1>
+        </div>
+        <div class="container">
+            <div class="content">
+                <form name="write" method="post" action="updateAction.php?listNum=<?=$listNum?>">
                     <input type="text" name="title" value="<?=$arr['title'];?>">
-                </td>
-            </tr>
-            <tr>
-                <td height="200" style="text-align: center">내용</td>
-                <td>
                     <textarea cols="80" rows="10" name="content"><?=$arr['content']?></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <input type="submit" value="글 수정하기">
-                </td>
-            </tr>
-        </table>
-    </form>
+                    <input id="btn" type="submit" value="글 수정하기">
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            Email: pjh5365@naver.com &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://github.com/pjh5365/ServerManagementPage" target="_blank">Github</a>
+        </div>
+    </div>
 </body>

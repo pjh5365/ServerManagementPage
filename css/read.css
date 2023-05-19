@@ -14,8 +14,8 @@ a {
 }
 /*헤더*/
 .header {
-    z-index: 1;
     position: relative;
+    z-index: 1;
     background-color: #A0D8B3;
     height: 100px;
     top: 0;
@@ -80,6 +80,23 @@ a {
 }
 .content {
     margin: 50px auto;
+}
+#info{
+    border: solid #1BBC9B;
+    margin: 10px auto;
+    width: 700px;
+    border-radius: 5px;
+}
+#mainText{
+    color: #4C4C6D;
+    border: solid #4C4C6D;
+    margin: 10px auto;
+    width: 1000px;
+    border-radius: 5px;
+}
+span {
+    padding: 10px;
+    display: inline-block;
 }
 .footer {
     position: relative;

@@ -2,28 +2,25 @@
 <head>
     <meta charset="UTF-8">
     <title>글 쓰기</title>
+    <link rel="stylesheet" href="css/write.css">
 </head>
 <body>
-    <h1 style="text-align: center">글 작성</h1>
-    <form name="write" method="post" action="writeAction.php">
-        <table align="center" border="10" width="1200">
-            <tr>
-                <td height="20" style="text-align: center">제목</td>
-                <td>
-                    <input type="text" name="title">
-                </td>
-            </tr>
-            <tr>
-                <td height="200" style="text-align: center">내용</td>
-                <td>
-                    <textarea cols="80" rows="10" name="content"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <input type="submit" value="글 작성">
-                </td>
-            </tr>
-        </table>
-    </form>
+    <div class="wrap">
+        <div class="header">
+            <h1>글 작성</h1>
+        </div>
+        <div class="container">
+            <div class="content">
+                <form name="write" method="post" action="writeAction.php">
+                    <input type="text" name="title" placeholder="제목">
+                    <textarea cols="80" rows="10" name="content" placeholder="본문내용"></textarea>
+                    <input id="btn" type="submit" value="글 작성">
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            Email: pjh5365@naver.com &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="https://github.com/pjh5365/ServerManagementPage" target="_blank">Github</a>
+        </div>
+    </div>
 </body>
