@@ -18,7 +18,7 @@ if($conn) {
     }
 }
 else{
-    echo "<h3>DB연동에 실패하였습니다.</h3>";
+    echo "DB연동에 실패하였습니다.";
 }
 
 $sql = "SELECT * FROM boardlist ORDER BY listNum DESC"; //내림차순으로 검색
